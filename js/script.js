@@ -55,6 +55,11 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 }
 
+function btnCopiar() {
+    const contenido = mensaje.value;
+    navigator.clipboard.writeText(contenido);
+}
+
 btnCopiar.addEventListener("click", () => {
     const contenido = mensaje.value;
     navigator.clipboard.writeText(contenido);
